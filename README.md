@@ -39,6 +39,7 @@ CREATE nestjs-study/test/jest-e2e.json (183 bytes)
 
 * 환경 분리 (prod 의 경우 따로 명령어로 주입)
 * 모듈 분리
+* Logger Winston 대체
 
 ---
 

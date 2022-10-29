@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, Logger } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
 import { HttpModule } from './http/http.module';
@@ -14,5 +14,6 @@ import { HttpModule } from './http/http.module';
     // For HTTP
     HttpModule,
   ],
+  providers: [Logger],
 })
 export class AppModule {}
