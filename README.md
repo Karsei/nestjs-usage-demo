@@ -1,3 +1,43 @@
+# nestjs-study
+
+NestJS 테스트 및 사용법 관련
+
+## Install
+
+https://github.com/nestjs/typescript-starter 에서 시작해도 됨
+
+```bash
+# cli 설치
+$ npm i -g @nestjs/cli
+
+# 프로젝트 초기화
+$ nest new [project-name]
+⚡  We will scaffold your app in a few seconds..
+
+CREATE nestjs-study/.eslintrc.js (665 bytes)
+CREATE nestjs-study/.prettierrc (51 bytes)
+CREATE nestjs-study/README.md (3340 bytes)
+CREATE nestjs-study/nest-cli.json (118 bytes)
+CREATE nestjs-study/package.json (1997 bytes)
+CREATE nestjs-study/tsconfig.build.json (97 bytes)
+CREATE nestjs-study/tsconfig.json (546 bytes)
+CREATE nestjs-study/src/app.controller.spec.ts (617 bytes)
+CREATE nestjs-study/src/app.controller.ts (274 bytes)
+CREATE nestjs-study/src/app.module.ts (249 bytes)
+CREATE nestjs-study/src/app.service.ts (142 bytes)
+CREATE nestjs-study/src/main.ts (208 bytes)
+CREATE nestjs-study/test/app.e2e-spec.ts (630 bytes)
+CREATE nestjs-study/test/jest-e2e.json (183 bytes)
+
+? Which package manager would you ❤️  to use? (Use arrow keys)
+❯ npm
+  yarn
+  pnpm
+```
+
+
+---
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>

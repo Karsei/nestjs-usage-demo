@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
 import { HttpModule } from './http/http.module';
-import { DiscordBotModule } from './bot/discord.module';
 
 @Module({
   imports: [
@@ -14,8 +13,6 @@ import { DiscordBotModule } from './bot/discord.module';
     }),
     // For HTTP
     HttpModule,
-    // For Discord
-    DiscordBotModule,
   ],
 })
 export class AppModule {}
