@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 80:80
+      - "80:80"
     profiles:
       - dev
     env_file:
@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 80:80
+      - "80:80"
     profiles:
       - prod
     env_file:
@@ -76,9 +76,11 @@ services:
     restart: on-failure
 
   redis-dev:
-    image: redis:6.2-alpine
+    image: bitnami/redis:6.2
     ports:
-      - "6379"
+      - "6379:6379"
+    env_file:
+      - .env.dev
     profiles:
       - dev
       - infra-only
@@ -86,9 +88,11 @@ services:
       - backend
 
   redis-prod:
-    image: redis:6.2-alpine
+    image: bitnami/redis:6.2
     ports:
-      - "6379"
+      - "6379:6379"
+    env_file:
+      - .env
     profiles:
       - prod
     networks:
