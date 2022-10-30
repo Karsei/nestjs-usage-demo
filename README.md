@@ -35,11 +35,25 @@ CREATE nestjs-study/test/jest-e2e.json (183 bytes)
   pnpm
 ```
 
+```bash
+$ docker compose build --no-cache
+
+# dev
+$ docker compose --profile dev up
+
+# dev with only infrastructures
+$ docker compose --profile infra-only up
+
+# prod
+$ docker compose --profile prod up
+```
+
 ## 추가사항
 
 * 환경 분리 (prod 의 경우 따로 명령어로 주입)
 * 모듈 분리
 * Logger Winston 대체
+* Docker Compose 작성
 
 ---
 
