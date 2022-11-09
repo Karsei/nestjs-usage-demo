@@ -1,6 +1,6 @@
-# nestjs-study
+# nestjs-usage-boilerplate
 
-NestJS 테스트 및 사용법 관련
+NestJS 사용 및 환경 구성 세팅
 
 ## Install
 
